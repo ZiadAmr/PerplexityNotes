@@ -19,7 +19,7 @@ export default function Modal ({ isOpen, onClose, noteID }) {
     const options = {
         method: 'POST',
         headers: {Authorization: 'Bearer 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', 'Content-Type': 'application/json'},
-        body: `{"model":"sonar","messages":[{"role":"system","content":"Be precise and concise."},{"role":"user","content":"${noteNote}"}]}`
+        body: `{"model":"sonar","messages":[{"role":"system","content":"Be precise and concise. Fact check the content of the message."},{"role":"user","content":"${noteNote}"}]}`
     };
 
     const auth = getAuth();
