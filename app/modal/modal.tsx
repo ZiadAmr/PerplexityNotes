@@ -15,10 +15,10 @@ export default function Modal ({ isOpen, onClose, noteID }) {
     const [factCheck, setFactCheck] = useState("")
     const [citations, setCitations] = useState([])
     
-    const API_KEY = "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"
+    const API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     const options = {
         method: 'POST',
-        headers: {Authorization: 'Bearer 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', 'Content-Type': 'application/json'},
+        headers: {Authorization: 'Bearer pplx-XXXXXXXXXXXXXXXXXXXXXXXXXXXX', 'Content-Type': 'application/json'},
         body: `{"model":"sonar","messages":[{"role":"system","content":"Be precise and concise. Fact check the content of the message."},{"role":"user","content":"${noteNote}"}]}`
     };
 
